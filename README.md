@@ -23,6 +23,7 @@ git init
 
 
 5) Copy existing django project to current directory or create a new project.
+*it's can take a long time, because before run compose would build an image
 
 ```
 docker-compose run --no-deps --rm www django-admin startproject project_name .
