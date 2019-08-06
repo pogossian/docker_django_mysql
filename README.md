@@ -70,3 +70,11 @@ docker exec -it project_name_www_1 python3 manage.py createsuperuser
 11) Try to login in admin page
 * http://localhost:8000/admin/
 
+
+use `docker exec -it project_name_www_1 python3 manage.py` command for working with `manage.py`
+
+e.g.
+
+`docker exec -it project_name_www_1 python3 manage.py migrate` - for migrate
+
+`docker exec -it project_name_www_1 python3 manage.py makemigrations` - for makemigrations
