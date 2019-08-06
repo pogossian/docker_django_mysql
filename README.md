@@ -57,7 +57,7 @@ DATABASES = {
     docker-compose up -d
 ```
 
-9) Django will run as soon as mysql be ready
+9) Django will run as soon as mysql be ready (if you want you can watch to running proccess `docker-compose logs`)
 * http://localhost:8000
 
 
