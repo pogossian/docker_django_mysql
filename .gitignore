@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+debug.log
+*.pyc
+000*.py
+.idea/
+*.pyc
+__pycache__/
+
