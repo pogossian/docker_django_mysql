@@ -28,13 +28,13 @@ git init
 docker-compose run --no-deps --rm www django-admin startproject project_name .
 ```
 
-6) Change mysql root password in docker-compose.yml
+6) Change mysql root password in `docker-compose.yml`
 
 ```
      - MYSQL_ROOT_PASSWORD=newpass
 ```
 
-7) Change databases to mysql in project_name/settings.py
+7) Change databases to mysql in `project_name/settings.py`
 
 ```
 DATABASES = {
@@ -57,3 +57,14 @@ DATABASES = {
 
 9) Django will run as soon as mysql be ready
 * http://localhost:8000
+
+
+10) Create superuser
+
+```
+docker exec -it project_name_www_1 python3 manage.py createsuperuser
+```
+
+11) Try to login in admin page
+* http://localhost:8000/admin/
+
