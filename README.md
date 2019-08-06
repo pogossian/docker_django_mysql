@@ -71,6 +71,10 @@ docker exec -it project_name_www_1 python3 manage.py createsuperuser
 * http://localhost:8000/admin/
 
 
+
+P.S
+
+
 use `docker exec -it project_name_www_1 python3 manage.py` command for working with `manage.py`
 
 e.g.
