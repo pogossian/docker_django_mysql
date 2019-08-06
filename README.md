@@ -19,19 +19,22 @@ rm -rf .git/
 git init
 ```
 
-4) Copy existing django project to current directory or create a new project.
+4) Review and update `requirements.txt`
+
+
+5) Copy existing django project to current directory or create a new project.
 
 ```
 docker-compose run --no-deps --rm www django-admin startproject project_name .
 ```
 
-5) Change mysql root password in docker-compose.yml
+6) Change mysql root password in docker-compose.yml
 
 ```
      - MYSQL_ROOT_PASSWORD=newpass
 ```
 
-6) Change databases to mysql in project_name/settings.py
+7) Change databases to mysql in project_name/settings.py
 
 ```
 DATABASES = {
@@ -46,8 +49,11 @@ DATABASES = {
 }
 ```
 
-7) Run compose 
+8) Run compose 
 
 ```
     docker-compose up -d
 ```
+
+9) Django will run as soon as mysql be ready
+* http://localhost:8000
